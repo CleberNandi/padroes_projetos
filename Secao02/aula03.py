@@ -2,7 +2,7 @@ from typing import List, Tuple
 
 class Curso:
 
-    def __init__(self: object, nome: str = 'Curso Padrão', carga_horaria: int = 45):
+    def __init__(self: object, nome: str = 'Curso Padrão', carga_horaria: int = 45)->None:
         self.__nome = nome
         self.__carga_horaria = carga_horaria
 
@@ -26,22 +26,22 @@ print(nome[:4], tupla[:4], lista[:4])
 
 class Pessoa:
 
-    def __init__(self: object, nome: str):
+    def __init__(self: object, nome: str)->None:
         self.__nome = nome
 
-    def andar(self: object):
+    def andar(self: object)->None:
         print('Estou andando...')
 
 
 class Aluno(Pessoa):
 
-    def __init__(self: object, nome: str, matricula: str):
+    def __init__(self: object, nome: str, matricula: str)->None:
         super().__init__(nome)
         self.__matricula = matricula
 
 
 
-felicity = Aluno('Felicity', 12345)
+felicity = Aluno('Felicity', "12345")
 
 felicity.andar()
 
